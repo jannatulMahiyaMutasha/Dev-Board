@@ -6,8 +6,8 @@
     <title>Task Management Dashboard</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100 p-4">
-    <div class="max-w-6xl mx-auto  p-6 rounded-lg shadow-lg">
+<body class="bg-gray-200 p-4">
+    <div class="max-w-6xl mx-auto  rounded-lg shadow-lg">
         <!-- Header Section -->
         <header>
             <nav class="flex justify-between items-center p-4 bg-white shadow-md rounded-lg">
@@ -23,7 +23,7 @@
                         <span class="text-lg font-bold ml-2">23</span>
                     </div>
                     <div class="w-8 h-8 rounded-full bg-gradient-to-r from-blue-500 to-red-500 flex items-center justify-center">
-                        <span><img src="./assets/theme-btn.png" alt="theme"></span>
+                        <button id="theme-btn"><span><img src="./assets/theme-btn.png" alt="theme"></span></button>
                     </div>
                 </div>
             </nav>
@@ -45,7 +45,7 @@
                         </div class="pt-4 pb-4">
                         <div>
                             <span class="text-lg text-black-500">Task Assigned</span>
-                        <h2 class="text-3xl font-bold text-black-700" id="task-count">05</h2>
+                        <h2 class="text-3xl font-bold text-black-700" id="task-count">06</h2>
                         </div>
                    </div>
                     <div class="bg-gradient-to-r from-blue-500 to-purple-500 text-white p-4 rounded-lg grid grid-cols-2 gap-1">
@@ -53,7 +53,7 @@
                             <img src="./assets/board.png" alt="board">
                         </div>
                        <div>
-                        <h2 class="text-lg font-semibold">Discover Something New Today!</h2>
+                        <h2 class="text-lg font-semibold" onclick="window.location.href='discover.html'">Discover Something New Today!</h2>
                        </div>
                     </div>
 
@@ -62,7 +62,7 @@
                         <img src="./assets/calender.png" alt="calender">
                     </div>
                     <div>
-                        <h3 class="text-lg "> Wed, <br><span id="current-date" class="font-semibold">Jul 28 2025</span></h3>
+                        <h3 class="text-lg "><span id="current-date" class="font-semibold">Jul 28 2025</span></h3>
                     </div>
                 </div>
 
@@ -77,32 +77,41 @@
                     <span class="text-sm bg-gray-200 px-2 py-1 rounded">ShopEase</span>
                     <h3 class="text-lg font-bold mt-2">Fix Mobile Button Issue</h3>
                     <p class="text-gray-500 text-sm mt-1">Debug using Chrome DevTools,check for overlappi...</p>
-                    <p class="text-sm font-semibold mt-3">Deadline: <span class="text-gray-700">21 March 2025</span></p>
+                    <div class="flex">
+                        <p class="text-sm font-semibold mt-3">Deadline <br><span class="text-gray-700">21 March 2025</span></p>
                     <button class="mt-3 bg-blue-600 text-white px-4 py-2 rounded-lg task-complete-btn">Complete</button>
+                    </div>
                 </div>
 
                 <div class="bg-white p-4 rounded-lg shadow-md" data-task>
                     <span class="text-sm bg-gray-200 px-2 py-1 rounded">CloudSync</span>
                     <h3 class="text-lg font-bold mt-2">Add Dark Mode</h3>
                     <p class="text-gray-500 text-sm mt-1">Store user preference in localStorage,update CSS vari...</p>
-                    <p class="text-sm font-semibold mt-3">Deadline: <span class="text-gray-700">21 March 2025</span></p>
+                    <div class="flex">
+                        <p class="text-sm font-semibold mt-3">Deadline  <br><span class="text-gray-700">21 March 2025</span></p>
                     <button class="mt-3 bg-blue-600 text-white px-4 py-2 rounded-lg task-complete-btn">Complete</button>
+                    </div>
+                    
                 </div>
 
                 <div class="bg-white p-4 rounded-lg shadow-md" data-task>
                     <span class="text-sm bg-gray-200 px-2 py-1 rounded">SwiftPay</span>
                     <h3 class="text-lg font-bold mt-2">Optimize Home Page</h3>
                     <p class="text-gray-500 text-sm mt-1">Debug using Chrome DevTools, check for overlapping...</p>
-                    <p class="text-sm font-semibold mt-3">Deadline: <span class="text-gray-700">21 March 2025</span></p>
+                    <div class="flex">
+                        <p class="text-sm font-semibold mt-3">Deadline <br> <span class="text-gray-700">21 March 2025</span></p>
                     <button class="mt-3 bg-blue-600 text-white px-4 py-2 rounded-lg task-complete-btn">Complete</button>
+                    </div>
                 </div>
 
                 <div class="bg-white p-4 rounded-lg shadow-md" data-task>
                     <span class="text-sm bg-gray-200 px-2 py-1 rounded">Meta</span>
                     <h3 class="text-lg font-bold mt-2">Add new emoji 🤲</h3>
                     <p class="text-gray-500 text-sm mt-1">Debug using Chrome DevTools,check for overlapping...</p>
-                    <p class="text-sm font-semibold mt-3">Deadline: <span class="text-gray-700">21 March 2025</span></p>
+                    <div class="flex">
+                        <p class="text-sm font-semibold mt-3">Deadline <br> <span class="text-gray-700">21 March 2025</span></p>
                     <button class="mt-3 bg-blue-600 text-white px-4 py-2 rounded-lg task-complete-btn">Complete</button>
+                    </div>
                 </div>
 
 
@@ -110,8 +119,10 @@
                     <span class="text-sm bg-gray-200 px-2 py-1 rounded">Google LLC</span>
                     <h3 class="text-lg font-bold mt-2">Integrate OpenAI API</h3>
                     <p class="text-gray-500 text-sm mt-1">Debug using Chrome DevTools, check for overlapping...</p>
-                    <p class="text-sm font-semibold mt-3">Deadline: <span class="text-gray-700">21 March 2025</span></p>
+                    <div class="flex">
+                        <p class="text-sm font-semibold mt-3">Deadline <br> <span class="text-gray-700">21 March 2025</span></p>
                     <button class="mt-3 bg-blue-600 text-white px-4 py-2 rounded-lg task-complete-btn">Complete</button>
+                    </div>
                 </div>
     
 
@@ -119,8 +130,10 @@
                     <span class="text-sm bg-gray-200 px-2 py-1 rounded">Glassdoor</span>
                     <h3 class="text-lg font-bold mt-2">Improve Job Searching</h3>
                     <p class="text-gray-500 text-sm mt-1">Debug using Chrome DevTools, check for overlapping...</p>
-                    <p class="text-sm font-semibold mt-3">Deadline: <span class="text-gray-700">21 March 2025</span></p>
+                    <div class="flex">
+                        <p class="text-sm font-semibold mt-3">Deadline <br> <span class="text-gray-700">21 March 2025</span></p>
                     <button class="mt-3 bg-blue-600 text-white px-4 py-2 rounded-lg task-complete-btn">Complete</button>
+                    </div>
                 </div>
 
             </div>
@@ -137,33 +150,145 @@
             <button class="mt-2 bg-blue-600 text-white px-4 py-1 rounded-lg clear-log">Clear History</button>
             <div class="mt-3 space-y-2" id="activity-log"></div>
         </div>
-
-       
     </div>
 
     <!-- <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const taskButtons = document.querySelectorAll('.task-btn');
-            const taskCount = document.getElementById('task-count');
-            const activityLog = document.getElementById('activity-log');
-            let completedTasks = 0;
-
-            taskButtons.forEach(button => {
-                button.addEventListener('click', () => {
-                    const taskCard = button.closest('[data-task]');
-                    button.textContent = 'Completed';
-                    button.classList.remove('bg-blue-600');
-                    button.classList.add('bg-gray-400');
+        document.addEventListener("DOMContentLoaded", function () {
+            const taskCountEl = document.getElementById("task-count");
+            const tickMarkEl = document.querySelector(".text-lg.font-bold.ml-2");
+            const activityLogEl = document.getElementById("activity-log");
+            const clearLogBtn = document.querySelector(".clear-log");
+            const completeBtns = document.querySelectorAll(".task-complete-btn");
+    
+            let taskCount = parseInt(taskCountEl.textContent);
+            let tickMarkCount = parseInt(tickMarkEl.textContent);
+    
+            completeBtns.forEach(button => {
+                button.addEventListener("click", function () {
+                    const taskCard = this.closest("[data-task]");
+                    const taskTitle = taskCard.querySelector("h3").textContent;
+                    
+                    // Show confirmation alert
+                    if (confirm(`Are you sure you want to mark "${taskTitle}" as complete?`)) {
+                        // Reduce task count and update UI
+                        taskCount--;
+                        tickMarkCount++;
+                        taskCountEl.textContent = taskCount;
+                        tickMarkEl.textContent = tickMarkCount;
+    
+                        // Get current time
+                        const now = new Date();
+                        const timeString = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+    
+                        // Add entry to activity log
+                        const logEntry = document.createElement("div");
+                        logEntry.className = "bg-gray-100 p-2 rounded";
+                        logEntry.innerHTML = `<p><strong>${taskTitle}</strong> completed at ${timeString}</p>`;
+                        activityLogEl.appendChild(logEntry);
+    
+                        // Disable complete button
+                        this.disabled = true;
+                        this.classList.add("opacity-50", "cursor-not-allowed");
+                    }
+                });
+            });
+    
+            // Clear activity log
+            clearLogBtn.addEventListener("click", function () {
+                activityLogEl.innerHTML = "";
+                completeBtns.forEach(button => {
                     button.disabled = true;
-                    completedTasks++;
-                    taskCount.textContent = 5 - completedTasks;
-
-                    const logEntry = document.createElement('li');
-                    logEntry.textContent = `Task completed: ${taskCard.querySelector('h3').textContent}`;
-                    activityLog.appendChild(logEntry);
+                    button.classList.add("opacity-50", "cursor-not-allowed");
                 });
             });
         });
     </script> -->
+    
+        
+        
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const taskCountEl = document.getElementById("task-count");
+            const tickMarkEl = document.querySelector(".text-lg.font-bold.ml-2");
+            const activityLogEl = document.getElementById("activity-log");
+            const clearLogBtn = document.querySelector(".clear-log");
+            const completeBtns = document.querySelectorAll(".task-complete-btn");
+            const themeBtn = document.getElementById("theme-btn");
+
+            let taskCount = parseInt(taskCountEl.textContent);
+            let tickMarkCount = parseInt(tickMarkEl.textContent);
+
+            completeBtns.forEach(button => {
+                button.addEventListener("click", function () {
+                    const taskCard = this.closest("[data-task]");
+                    const taskTitle = taskCard.querySelector("h3").textContent;
+
+                    // Show confirmation alert
+                    if (confirm(`Are you sure you want to mark "${taskTitle}" as complete?`)) {
+                        // Reduce task count and update UI
+                        taskCount--;
+                        tickMarkCount++;
+                        taskCountEl.textContent = taskCount;
+                        tickMarkEl.textContent = tickMarkCount;
+
+                        // Get current time
+                        const now = new Date();
+                        const timeString = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+
+                        // Add entry to activity log
+                        const logEntry = document.createElement("div");
+                        logEntry.className = "bg-gray-100 p-2 rounded";
+                        logEntry.innerHTML = `<p><strong>${taskTitle}</strong> completed at ${timeString}</p>`;
+                        activityLogEl.appendChild(logEntry);
+
+                        // Disable complete button
+                        this.disabled = true;
+                        this.classList.add("opacity-50", "cursor-not-allowed");
+                    }
+                });
+            });
+
+            // Clear activity log
+            clearLogBtn.addEventListener("click", function () {
+                activityLogEl.innerHTML = "";
+                completeBtns.forEach(button => {
+                    button.disabled = true;
+                    button.classList.add("opacity-50", "cursor-not-allowed");
+                });
+            });
+
+            // Theme button - random background color change
+            themeBtn.addEventListener("click", function () {
+                const randomColor = getRandomColor();
+                document.body.style.backgroundColor = randomColor;
+            });
+
+            // Function to generate a random color
+            function getRandomColor() {
+                const letters = "0123456789ABCDEF";
+                let color = "#";
+                for (let i = 0; i < 6; i++) {
+                    color += letters[Math.floor(Math.random() * 16)];
+                }
+                return color;
+            }
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+    const currentDateElement = document.getElementById("current-date");
+    
+    // Function to get current date in the desired format (e.g., "Wed, Jul 28 2025")
+    function getCurrentDate() {
+        const now = new Date();
+        const options = { weekday: 'short', year: 'numeric', month: 'short', day: 'numeric' };
+        return now.toLocaleDateString('en-US', options);
+    }
+
+    // Set the current date on the page
+    currentDateElement.textContent = getCurrentDate();
+});
+
+    </script>
+    
 </body>
 </html>

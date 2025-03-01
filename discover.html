@@ -1,47 +1,3 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
-</head>
-<body class="bg-gray-100 p-4">
-    <div class="max-w-6xl mx-auto  p-6 rounded-lg shadow-lg">
-        Header Section 
-        <header>
-            <nav class="flex justify-between items-center p-4 bg-white shadow-md rounded-lg">
-                <div class="flex items-center space-x-2">
-                    <div class="bg-blue-600 p-2 rounded-lg">
-                        <span class="text-white font-bold text-lg"><img src="./assets/logo.png" alt="logo"></span>
-                    </div>
-                    <h1 class="text-2xl text-gray-900">Dev<span class="text-black-700 font-bold">Board</span></h1>
-                </div>
-                <div class="flex items-center space-x-4">
-                    <div class="w-8 h-8 rounded-full  flex items-center justify-center">
-                        <button class="mt-2 bg-blue-600 text-white px-4 py-1 rounded-lg clear-log">Back to Desk</button>
-                    </div>
-                </div>
-            </nav>
-        </header>
-
-      <h2 class="text-center">Blogs</h2>
-
-      <div>
-       
-
-Question-2: What is the difference between innerHTML, innerText, and textContent ?
-
-Question-3: What is event delegation in the DOM?
-
-Question-4: What is event bubbling in the DOM?
-
-Question-5: How do you create, add, and remove elements using JavaScript?
-      </div>
-        </div>
-</body>
-</html> -->
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -53,11 +9,14 @@ Question-5: How do you create, add, and remove elements using JavaScript?
 <body class="bg-gray-100 p-6">
 
     <!-- Navbar -->
-    <nav class="bg-white shadow-md p-4 flex justify-between items-center">
-        <h1 class="text-xl font-bold text-gray-800">DevBoard</h1>
-        <a href="index.html" class="px-4 py-2 bg-blue-600 text-white rounded-lg">Back</a>
-    </nav>
+     <nav class="bg-white shadow-md p-4 flex justify-between items-center mx-auto max-w-4xl">
+        
+           <div class="flex"> <span class="text-white font-bold text-lg"><img src="./assets/logo.png" alt="logo"></span>
+            <h1 class="text-xl font-bold text-gray-800 mt-4">DevBoard</h1></div>
+        <a href="index.html" class="px-4 py-2 bg-blue-600 text-white rounded-lg">Back to Desk</a>
+    </nav> 
 
+    
     <!-- Blog Section -->
     <div class="max-w-4xl mx-auto bg-white shadow-lg rounded-lg p-6 mt-6">
         <h2 class="text-2xl font-bold text-gray-800 text-center">Blogs</h2>
@@ -98,6 +57,16 @@ For multiple elements, use getElementsByClassName(), getElementsByTagName(), or 
             <h3 class="text-lg font-semibold text-gray-700">Question-4: What is event bubbling in the DOM?</h3>
             <p class="text-gray-600 mt-2">
                 Event bubbling in JavaScript is a process where an event originates from the deepest (innermost) element and then propagates upward to its parent elements. If a button is inside a div, and both have click event listeners. Clicking the button first triggers its event.The event then moves up to the div (its parent).It continues bubbling up to the body and even the HTML document.
+            </p>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="mt-6">
+            <h3 class="text-lg font-semibold text-gray-700">Question-5: How do you create, add, and remove elements using JavaScript?</h3>
+            <p class="text-gray-600 mt-2">
+                Create an element → document.createElement("tag")
+                Add an element → appendChild(), append(), prepend(), insertBefore()
+                Remove an element → removeChild(), remove()
             </p>
         </div>
     </div>
