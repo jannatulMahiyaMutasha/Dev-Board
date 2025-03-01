@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,7 +7,7 @@
 </head>
 <body class="bg-gray-100 p-4">
     <div class="max-w-6xl mx-auto  p-6 rounded-lg shadow-lg">
-        <!-- Header Section -->
+        Header Section 
         <header>
             <nav class="flex justify-between items-center p-4 bg-white shadow-md rounded-lg">
                 <div class="flex items-center space-x-2">
@@ -17,17 +17,90 @@
                     <h1 class="text-2xl text-gray-900">Dev<span class="text-black-700 font-bold">Board</span></h1>
                 </div>
                 <div class="flex items-center space-x-4">
-                    <div class="flex items-center bg-gray-100 px-3 py-1 rounded-full">
-                        <span><img src="./assets/checkbox.png" alt="checkbox"></span>
-                        <span class="text-lg font-bold ml-2">23</span>
-                    </div>
-                    <div class="w-8 h-8 rounded-full bg-gradient-to-r from-blue-500 to-red-500 flex items-center justify-center">
-                        <span><img src="./assets/theme-btn.png" alt="theme"></span>
+                    <div class="w-8 h-8 rounded-full  flex items-center justify-center">
+                        <button class="mt-2 bg-blue-600 text-white px-4 py-1 rounded-lg clear-log">Back to Desk</button>
                     </div>
                 </div>
             </nav>
         </header>
 
+      <h2 class="text-center">Blogs</h2>
+
+      <div>
+       
+
+Question-2: What is the difference between innerHTML, innerText, and textContent ?
+
+Question-3: What is event delegation in the DOM?
+
+Question-4: What is event bubbling in the DOM?
+
+Question-5: How do you create, add, and remove elements using JavaScript?
+      </div>
         </div>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevBoard - Blog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-6">
+
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md p-4 flex justify-between items-center">
+        <h1 class="text-xl font-bold text-gray-800">DevBoard</h1>
+        <a href="index.html" class="px-4 py-2 bg-blue-600 text-white rounded-lg">Back</a>
+    </nav>
+
+    <!-- Blog Section -->
+    <div class="max-w-4xl mx-auto bg-white shadow-lg rounded-lg p-6 mt-6">
+        <h2 class="text-2xl font-bold text-gray-800 text-center">Blogs</h2>
+
+        <!-- Question 1 -->
+        <div class="mt-6">
+            <h3 class="text-lg font-semibold text-gray-700">Question-1: What are the different ways to select an element in the DOM?</h3>
+            <p class="text-gray-600 mt-2">
+                Ways to Select an Element in the DOM-
+getElementById("id") : Retrieves a single element using its ID.
+getElementsByClassName("class") : Selects multiple elements by class name, returning an HTMLCollection.
+getElementsByTagName("tag") : Retrieves multiple elements by tag name, also returning an HTMLCollection.
+querySelector("selector") : Selects the first element that matches a given CSS selector.
+querySelectorAll("selector") : Retrieves all elements matching a CSS selector, returning a NodeList.
+For a single element, use getElementById() or querySelector().
+For multiple elements, use getElementsByClassName(), getElementsByTagName(), or querySelectorAll().
+            </p>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="mt-6">
+            <h3 class="text-lg font-semibold text-gray-700">Question-2: What is the difference between innerHTML, innerText, and textContent?</h3>
+            <p class="text-gray-600 mt-2">
+                The key difference between `innerHTML`, `innerText`, and `textContent` is how they retrieve and manage content within an element. The `innerHTML` property allows getting or setting the HTML content inside an element, meaning it includes both text and any embedded HTML tags. This makes it useful for handling formatted content but can be a security risk when dealing with user input. In contrast, `innerText` retrieves or updates only the **visible text**, ignoring hidden elements and stripping out any HTML tags. This makes it a faster and safer option for basic text manipulation. Meanwhile, `textContent` also retrieves or sets text within an element, but unlike `innerText`, it includes hidden text while still treating all content as plain text without rendering HTML. Because of its efficiency and security benefits, `textContent` is often preferred when working with raw text. In summary, `innerHTML` is best for handling structured HTML content, `innerText` is ideal for working with only visible text, and `textContent` is suitable when extracting all text without any HTML formatting.
+            </p>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="mt-6">
+            <h3 class="text-lg font-semibold text-gray-700">Question-3: What is event delegation in the DOM?</h3>
+            <p class="text-gray-600 mt-2">
+                Event delegation is a JavaScript technique where a parent element manages events for its child elements, eliminating the need to attach event listeners to each child separately.
+            </p>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="mt-6">
+            <h3 class="text-lg font-semibold text-gray-700">Question-4: What is event bubbling in the DOM?</h3>
+            <p class="text-gray-600 mt-2">
+                Event bubbling in JavaScript is a process where an event originates from the deepest (innermost) element and then propagates upward to its parent elements. If a button is inside a div, and both have click event listeners. Clicking the button first triggers its event.The event then moves up to the div (its parent).It continues bubbling up to the body and even the HTML document.
+            </p>
+        </div>
+    </div>
+
 </body>
 </html>
