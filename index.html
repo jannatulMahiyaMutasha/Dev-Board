@@ -134,8 +134,6 @@
                         </div>
                     </div>
 
-                    <!-- Repeat for other task cards -->
-                    <!-- Task 2 to Task 6 -->
                 </div>
             </div>
 
@@ -218,6 +216,7 @@
                         tickMarkEl.textContent = tickMarkCount;
 
                         const timeString = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+                        
                         // Add entry to activity log
                         const logEntry = document.createElement("div");
                         logEntry.className = "bg-gray-100 p-2 rounded";
