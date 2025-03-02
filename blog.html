@@ -5,25 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DevBoard - Blog</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        hr{
+            border-style: dashed;
+        }
+    </style>
 </head>
 <body class="bg-gray-100 p-6">
 
     <!-- Navbar -->
      <nav class="bg-white shadow-md p-4 flex justify-between items-center mx-auto max-w-4xl">
         
-           <div class="flex"> <span class="text-white font-bold text-lg"><img src="./assets/logo.png" alt="logo"></span>
-            <h1 class="text-xl font-bold text-gray-800 mt-4">DevBoard</h1></div>
+           <div class="flex"> <span class="text-white  text-lg"><img src="./assets/logo.png" alt="logo"></span>
+            <h1 class="text-2xl text-gray-900 pt-3">Dev<span class="text-black-700 font-bold">Board</span></h1></div>
         <a href="index.html" class="px-4 py-2 bg-blue-600 text-white rounded-lg">Back to Desk</a>
     </nav> 
 
     
     <!-- Blog Section -->
-    <div class="max-w-4xl mx-auto bg-white shadow-lg rounded-lg p-6 mt-6">
-        <h2 class="text-2xl font-bold text-gray-800 text-center">Blogs</h2>
+    <h2 class="text-2xl font-bold text-gray-800 text-center pt-3">Blogs</h2>
+    <div class="max-w-4xl mx-auto rounded-lg ">
 
         <!-- Question 1 -->
-        <div class="mt-6">
+        <div class="mt-6 p-4  bg-white">
             <h3 class="text-lg font-semibold text-gray-700">Question-1: What are the different ways to select an element in the DOM?</h3>
+            <br>
+            <hr>
             <p class="text-gray-600 mt-2">
                 Ways to Select an Element in the DOM-
 getElementById("id") : Retrieves a single element using its ID.
@@ -37,32 +44,40 @@ For multiple elements, use getElementsByClassName(), getElementsByTagName(), or 
         </div>
 
         <!-- Question 2 -->
-        <div class="mt-6">
+        <div class="mt-6 p-4 bg-white">
             <h3 class="text-lg font-semibold text-gray-700">Question-2: What is the difference between innerHTML, innerText, and textContent?</h3>
+            <br>
+            <hr>
             <p class="text-gray-600 mt-2">
                 The key difference between `innerHTML`, `innerText`, and `textContent` is how they retrieve and manage content within an element. The `innerHTML` property allows getting or setting the HTML content inside an element, meaning it includes both text and any embedded HTML tags. This makes it useful for handling formatted content but can be a security risk when dealing with user input. In contrast, `innerText` retrieves or updates only the **visible text**, ignoring hidden elements and stripping out any HTML tags. This makes it a faster and safer option for basic text manipulation. Meanwhile, `textContent` also retrieves or sets text within an element, but unlike `innerText`, it includes hidden text while still treating all content as plain text without rendering HTML. Because of its efficiency and security benefits, `textContent` is often preferred when working with raw text. In summary, `innerHTML` is best for handling structured HTML content, `innerText` is ideal for working with only visible text, and `textContent` is suitable when extracting all text without any HTML formatting.
             </p>
         </div>
 
         <!-- Question 3 -->
-        <div class="mt-6">
+        <div class="mt-6 p-4  bg-white">
             <h3 class="text-lg font-semibold text-gray-700">Question-3: What is event delegation in the DOM?</h3>
+            <br>
+            <hr>
             <p class="text-gray-600 mt-2">
                 Event delegation is a JavaScript technique where a parent element manages events for its child elements, eliminating the need to attach event listeners to each child separately.
             </p>
         </div>
 
         <!-- Question 4 -->
-        <div class="mt-6">
+        <div class="mt-6 p-4  bg-white">
             <h3 class="text-lg font-semibold text-gray-700">Question-4: What is event bubbling in the DOM?</h3>
+            <br>
+            <hr>
             <p class="text-gray-600 mt-2">
                 Event bubbling in JavaScript is a process where an event originates from the deepest (innermost) element and then propagates upward to its parent elements. If a button is inside a div, and both have click event listeners. Clicking the button first triggers its event.The event then moves up to the div (its parent).It continues bubbling up to the body and even the HTML document.
             </p>
         </div>
 
         <!-- Question 5 -->
-        <div class="mt-6">
+        <div class="mt-6 p-4  bg-white">
             <h3 class="text-lg font-semibold text-gray-700">Question-5: How do you create, add, and remove elements using JavaScript?</h3>
+            <br>
+            <hr>
             <p class="text-gray-600 mt-2">
                 Create an element → document.createElement("tag")
                 Add an element → appendChild(), append(), prepend(), insertBefore()
