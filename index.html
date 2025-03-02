@@ -6,7 +6,7 @@
     <title>Task Management Dashboard</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        hr{
+        hr {
             border-style: dashed;
         }
     </style>
@@ -55,7 +55,9 @@
                                 <img src="./assets/board.png" alt="board">
                             </div>
                             <div>
-                                <h2 class="text-lg font-semibold" id="discover-link">Discover Something New Today!</h2>
+                                <a href="blog.html" id="discover-link">
+                                    <h2 class="text-lg font-semibold">Discover Something New Today!</h2>
+                                </a>
                             </div>
                         </div>
                         <div class="bg-blue-100 p-7 rounded-lg grid grid-cols-2 gap-1">
@@ -68,7 +70,7 @@
                         </div>
                     </div>
                 </div>
-                  <hr>
+                <hr>
                 <!-- Task List -->
                 <div class="grid grid-cols-3 gap-4 pt-4">
                     <!-- Task Cards -->
@@ -83,18 +85,8 @@
                     </div>
 
                     <div class="bg-blue-100 p-4 rounded-lg shadow-md" data-task>
-                        <span class="text-sm bg-white px-2 py-1 rounded">CloudSync</span>
-                        <h3 class="text-lg font-bold mt-2">Add Dark Mode</h3>
-                        <p class="text-gray-500 text-sm mt-1 bg-white p-2 rounded-lg">Store user preference in localStorage,update CSS vari...</p>
-                        <div class="flex">
-                            <p class="text-sm font-semibold mt-3 ">Deadline <br><span class="text-gray-700">21 March 2025</span></p>
-                            <button class="mt-3 bg-blue-600 text-white px-4 py-2 rounded-lg task-complete-btn ml-4">Completed</button>
-                        </div>
-                    </div>
-
-                    <div class="bg-blue-100 p-4 rounded-lg shadow-md" data-task>
-                        <span class="text-sm bg-gray-200 px-2 py-1 rounded bg-white">SwiftPay</span>
-                        <h3 class="text-lg font-bold mt-2">Optimize Home Page</h3>
+                        <span class="text-sm bg-white px-2 py-1 rounded">ShopEase</span>
+                        <h3 class="text-lg font-bold mt-2">Fix Mobile Button Issue</h3>
                         <p class="text-gray-500 text-sm mt-1 bg-white p-2 rounded-lg">Debug using Chrome DevTools, check for overlapping...</p>
                         <div class="flex">
                             <p class="text-sm font-semibold mt-3">Deadline <br><span class="text-gray-700">21 March 2025</span></p>
@@ -103,8 +95,8 @@
                     </div>
 
                     <div class="bg-blue-100 p-4 rounded-lg shadow-md" data-task>
-                        <span class="text-sm bg-gray-200 px-2 py-1 rounded bg-white">Meta</span>
-                        <h3 class="text-lg font-bold mt-2">Add new emoji 🤲</h3>
+                        <span class="text-sm bg-white px-2 py-1 rounded">ShopEase</span>
+                        <h3 class="text-lg font-bold mt-2">Fix Mobile Button Issue</h3>
                         <p class="text-gray-500 text-sm mt-1 bg-white p-2 rounded-lg">Debug using Chrome DevTools, check for overlapping...</p>
                         <div class="flex">
                             <p class="text-sm font-semibold mt-3">Deadline <br><span class="text-gray-700">21 March 2025</span></p>
@@ -113,8 +105,8 @@
                     </div>
 
                     <div class="bg-blue-100 p-4 rounded-lg shadow-md" data-task>
-                        <span class="text-sm bg-gray-200 px-2 py-1 rounded bg-white">Google LLC</span>
-                        <h3 class="text-lg font-bold mt-2">Integrate OpenAI API</h3>
+                        <span class="text-sm bg-white px-2 py-1 rounded">ShopEase</span>
+                        <h3 class="text-lg font-bold mt-2">Fix Mobile Button Issue</h3>
                         <p class="text-gray-500 text-sm mt-1 bg-white p-2 rounded-lg">Debug using Chrome DevTools, check for overlapping...</p>
                         <div class="flex">
                             <p class="text-sm font-semibold mt-3">Deadline <br><span class="text-gray-700">21 March 2025</span></p>
@@ -123,8 +115,8 @@
                     </div>
 
                     <div class="bg-blue-100 p-4 rounded-lg shadow-md" data-task>
-                        <span class="text-sm bg-gray-200 px-2 py-1 rounded bg-white">Glassdoor</span>
-                        <h3 class="text-lg font-bold mt-2">Improve Job Searching</h3>
+                        <span class="text-sm bg-white px-2 py-1 rounded">ShopEase</span>
+                        <h3 class="text-lg font-bold mt-2">Fix Mobile Button Issue</h3>
                         <p class="text-gray-500 text-sm mt-1 bg-white p-2 rounded-lg">Debug using Chrome DevTools, check for overlapping...</p>
                         <div class="flex">
                             <p class="text-sm font-semibold mt-3">Deadline <br><span class="text-gray-700">21 March 2025</span></p>
@@ -132,7 +124,15 @@
                         </div>
                     </div>
 
-        
+                    <div class="bg-blue-100 p-4 rounded-lg shadow-md" data-task>
+                        <span class="text-sm bg-white px-2 py-1 rounded">ShopEase</span>
+                        <h3 class="text-lg font-bold mt-2">Fix Mobile Button Issue</h3>
+                        <p class="text-gray-500 text-sm mt-1 bg-white p-2 rounded-lg">Debug using Chrome DevTools, check for overlapping...</p>
+                        <div class="flex">
+                            <p class="text-sm font-semibold mt-3">Deadline <br><span class="text-gray-700">21 March 2025</span></p>
+                            <button class="mt-3 bg-blue-600 text-white px-4 py-2 rounded-lg task-complete-btn ml-4">Completed</button>
+                        </div>
+                    </div>
 
                     <!-- Repeat for other task cards -->
                     <!-- Task 2 to Task 6 -->
@@ -144,10 +144,10 @@
                 <div class="flex space-x-2 ml-14">
                     <div>
                         <img src="./assets/activity.png" alt="activity">
-                        </div>
-                        <div>
-                            <span><h2 class="text-lg text-center">Activity Log</h2></span>
-                        </div>
+                    </div>
+                    <div>
+                        <span><h2 class="text-lg text-center">Activity Log</h2></span>
+                    </div>
                 </div>
                 <button class="mt-2 bg-blue-600 text-white px-4 py-1 rounded-lg clear-log ml-16">Clear History</button>
                 <div class="mt-3 space-y-2" id="activity-log"></div>
@@ -183,10 +183,8 @@
             const completeBtns = document.querySelectorAll(".task-complete-btn");
             const confirmationModal = document.getElementById("confirmation-modal");
             const successModal = document.getElementById("success-modal");
-            const modalMessage = document.getElementById("modal-message");
             const modalOkBtn = document.getElementById("modal-ok-btn");
             const successOkBtn = document.getElementById("success-ok-btn");
-            const discoverLink = document.getElementById("discover-link");
             const themeBtn = document.getElementById("theme-btn");
             const currentDateEl = document.getElementById("current-date");
 
@@ -199,9 +197,9 @@
             currentDateEl.textContent = now.toLocaleDateString('en-US', options);
 
             // Complete button functionality
-            completeBtns.forEach((button, index) => {
+            completeBtns.forEach((button) => {
                 button.addEventListener("click", function () {
-                    if (this.disabled) return; // Do nothing if the button is already disabled
+                    if (this.disabled) return;
 
                     const taskCard = this.closest("[data-task]");
                     const taskTitle = taskCard.querySelector("h3").textContent;
@@ -219,9 +217,7 @@
                         taskCountEl.textContent = taskCount;
                         tickMarkEl.textContent = tickMarkCount;
 
-                        // Get current time
-                        const timeString = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
-
+                        const timeString = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' });
                         // Add entry to activity log
                         const logEntry = document.createElement("div");
                         logEntry.className = "bg-gray-100 p-2 rounded";
@@ -245,16 +241,9 @@
                 successModal.classList.add("hidden");
             };
 
-            // Clear activity log and disable only clicked complete buttons
+            // Clear activity log
             clearLogBtn.addEventListener("click", function () {
-                activityLogEl.innerHTML = ""; // Clear activity log
-                // Only disable buttons that have already been clicked
-                completeBtns.forEach(button => {
-                    if (button.disabled) {
-                        button.disabled = true; // Keep disabled buttons disabled
-                        button.classList.add("opacity-50", "cursor-not-allowed");
-                    }
-                });
+                activityLogEl.innerHTML = "";
             });
 
             // Theme button - random background color change
@@ -272,11 +261,6 @@
                 }
                 return color;
             }
-
-            // Discover link redirect
-            discoverLink.addEventListener("click", function () {
-                window.location.href = "blog.html";
-            });
         });
     </script>
 </body>
